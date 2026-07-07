@@ -9,3 +9,12 @@
 
 cmake_minimum_required(VERSION 3.19)
 project(MilkshakeLinuxSTL VERSION 0.0.1 DESCRIPTION "基础设施库" LANGUAGES C)
+
+add_library(MilkshakeSTL SHARED
+    ################################################################################################
+    MilkshakeHashMap/MilkshakeHashMap.h
+    MilkshakeHashMap/MilkshakeHashMap.c
+    ################################################################################################
+)
+
+target_include_directories(MilkshakeSTL PUBLIC MilkshakeHashMap)
