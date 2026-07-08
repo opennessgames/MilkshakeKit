@@ -39,3 +39,10 @@
 
 # debug information files
 *.dwo
+
+# xixi
+/build/
+/Build/
+
+# 候选实现
+/CandidateDraft/
